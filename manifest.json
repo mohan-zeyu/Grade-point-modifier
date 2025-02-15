@@ -1,0 +1,32 @@
+{
+  "name": "grades - revision",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "门门满绩",
+  "permissions": ["storage","contextMenus", "notifications"],
+  "actions": {
+    "default_popup": "popup.html",
+    "default_icon":{
+        "16":"./img/1.png",
+        "32":"./img/1.png",
+        "64":"./img/1.png",
+        "128":"./img/1.png"
+    }
+  },
+  "icons":{
+    "16":"./img/1.png",
+    "32":"./img/1.png",
+    "64":"./img/1.png",
+    "128":"./img/1.png"
+  },
+  "background":{
+    "service_worker": "./js/background.js"
+  },
+  "content_scripts": [
+    {
+        "matches": ["http://zdbk.zju.edu.cn/jwglxt/*"],
+        "run_at": "document_end",
+        "js": ["./js/content.js"]
+    }
+  ]
+}
