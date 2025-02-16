@@ -24,7 +24,7 @@
   },
   "content_scripts": [
     {
-        "matches": ["http://zdbk.zju.edu.cn/jwglxt/*"],
+        "matches": ["http://zdbk.zju.edu.cn/jwglxt/cxdy/*"],
         "run_at": "document_end",
         "js": ["./js/content.js"]
     }
