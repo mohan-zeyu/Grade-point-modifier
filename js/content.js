@@ -1,4 +1,3 @@
-alert("获得称号 : 绩点之神");
 console.log("Hello world!");
 const observer = new MutationObserver(() => {
     const elements = document.querySelectorAll('[aria-describedby]');
@@ -6,6 +5,7 @@ const observer = new MutationObserver(() => {
         console.log(elements);
         observer.disconnect(); // 停止监听
     }
+    alert("获得称号 : 绩点之神");
     elements.forEach((element) => {
         // 获取 aria-describedby 的值
         const describedById = element.getAttribute("aria-describedby");
